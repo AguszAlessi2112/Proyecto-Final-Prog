@@ -1,0 +1,173 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+
+.navbar
+{
+    width: 100%;
+    background-color: black;
+    padding: 1%;
+}
+.ulnavbar
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+    list-style: none;      
+}
+li
+{
+    border-radius: 3px;
+    padding: 5px;
+    text-decoration: aliceblue;
+}
+ li:hover
+{
+    text-decoration: underline;
+}
+ button:hover
+{
+    background-color: grey;
+}
+
+.imggrande {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+}
+
+.imggrande img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.flechas {
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.flechas button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.pimg {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+
+ article img :hover
+{
+    opacity: 30%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 1.5rem;
+    width: 65%;
+    margin: 0 auto;
+}
+.cards article {
+    display: flex;
+    justify-content: center;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+
+.contenedorload
+{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonload
+{
+    
+    background-color: black;
+    padding: 1%;
+    
+}
+.buttonload, .flechas :hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.flechas :hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+.redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1%;
+}
+.contacts {
+    display: flex;
+    gap: 2rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+}
+.redes a {
+    color: #e9e9e9;
+    text-decoration: none;
+}
+.contacts a
+{
+color: #e9e9e9;
+    text-decoration: none;
+} 
+
+.titleproject
+{
+    padding: 2%;
+}
+footer {
+    background-color: black;
+    color: white;
+}
+
+
+.cardsfooter {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 1.5rem;
+    width: 30%;
+    margin: 0 auto;
+}
+.cards article {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cardsfooter img {
+    width: 100%;
+    height: 100%;
+}
