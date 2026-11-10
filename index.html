@@ -112,6 +112,7 @@
                  </article>
 
             <article>
+                <p class = "textcards">HOLA</p>
                 <img src="/imgs/img item.jpg" alt="">
                  </article>
 
@@ -194,7 +195,7 @@
     <div class = "relatedfooter">
         <h1 class = "h1footer">RELATED products</h1>
 
-    <div class = "cardsfooter">
+    <div class = "cardsfooter" id = "cards">
             <article>
                 <img src="/imgs/img item.jpg" alt="">
                  </article>
@@ -242,9 +243,23 @@ let previous = document.getElementById("previous")
 let next = document.getElementById("next")
 let img = document.getElementById("imgcarrusel")
 let button = document.getElementById("load")
+let cards = document.getElementById("imgscards")
+
 
 button.addEventListener("click", function()
 {
+for(let i = 0; i<1;i++)
+{
+    let newarticle = document.createElement("article")
+    let newimg = document.createElement("img");
+    let newp = document.createElement("p");
+    newp.textContent= "HOLA"
+    newp.classList.add("textcards");
+    newimg.src = "imgs/img.webp"
+    newarticle.appendChild(newimg)
+    newarticle.appendChild(newp)
+    cards.appendChild(newarticle)
+}
 
 
 })

@@ -86,6 +86,33 @@ li
     display: flex;
     justify-content: center;
 }
+.cards article {
+    position: relative;
+    overflow: hidden;
+}
+
+.cards img {
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.textcards {
+    position: absolute;
+   top: 50%;
+   left: 45%;
+    color: white;
+    opacity: 0;
+    z-index: 1;
+}
+
+.cards article:hover img {
+    filter: brightness(30%);
+}
+
+.cards article:hover .textcards {
+    opacity: 1;
+}
 
 .cards img {
     width: 100%;
