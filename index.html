@@ -6,7 +6,6 @@
     <title>Proyecto Final</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
 </head>
 
 <body>
@@ -27,7 +26,7 @@
 <section class="sectionuno">
 
     <div class = "imggrande">
-        <img  id = "imgcarrusel" src="/imgs/img.webp" alt="">
+        <img  id = "imgcarrusel" src="assets//imgs/img.webp" alt="">
 
     <div class = "flechas">
 
@@ -49,8 +48,6 @@
     <a href="">agusz.alessi@gmail.com</a>  
     <a href="">12345677</a>  
     </div>
-
-     
 
     <div class="icons">
         <a href="#" aria-label="500px">
@@ -92,52 +89,9 @@
     <h1 class = "titleproject"> PROJECTS</h1>
 
     <div class = "cards" id = "imgscards">
-            <article>
-                <p class = "textcards">HOLA</p>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-            <article>
-                <p class = "textcards">HOLA</p>
-                <img src="/imgs/img item.jpg" alt="">
-                
-                 </article>
-            <article>
-                <p class = "textcards">HOLA</p>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
 
-            <article>
-                <p class = "textcards">HOLA</p>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-
-            <article>
-                <p class = "textcards">HOLA</p>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-
-            <article>
-                <p class = "textcards">HOLA</p>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-
-            <article>
-                <p class = "textcards">HOLA</p>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-
-            <article>
-                <p class = "textcards">HOLA</p>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-
-            <article>
-                <p class = "textcards">HOLA</p>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-
-               
     </div>
+
     <div class = "contenedorload">
         <button  id = "load" class = "buttonload"> Load More</button>
     </div>
@@ -146,16 +100,16 @@
 
     </main>
 
-
 <footer>
 <div class = "contfooter">
     <div class = "logofooter">
 
-        <img src="imgs/logoabout.webp" alt="">
+        <img src="assets/imgs/logoabout.webp" alt="">
         <p>The concept of Brume has roots in the Vedic Literature. It comes as a developed form of sensual photography without mechanistic details and boasts a strong emotional background.</p>
     </div>
 
     <div class = "pagesfooter">
+          <h2>PAGES</h2>
         <ul>
         <li><a href="">ABOUT</a></li>
         <li><a href="">PRICING</a></li>
@@ -166,7 +120,7 @@
     </div>
     
     <div class = "contactsfooter">
-
+        <h2>CONTACTS</h2>
       <div class="iconsfooter">
                 <a href="#" aria-label="Pinterest">
                     <i class="fa-brands fa-pinterest"></i>
@@ -182,61 +136,28 @@
                 </a>
         </div>
 
-
         <div class="contacts">
-         <h1>CONTACTS</h1>
+         
         <a href="">agyuszdsafsaf</a>  
         <a href="">432325w3532</a> 
         </div>
-
-
-
     </div>    
     <div class = "relatedfooter">
-        <h1 class = "h1footer">RELATED products</h1>
+        <h2 class = "h1footer">RELATED PROJECTS</h2>
 
     <div class = "cardsfooter" id = "cards">
-            <article>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-            <article>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-            <article>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
 
-            <article>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-
-            <article>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-
-            <article>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-            <article>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-
-            <article>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
-                             <article>
-                <img src="/imgs/img item.jpg" alt="">
-                 </article>
     </div>
  </div>
 </footer>
 </body>
 
 <script>
-    
-let sliderimgs = ["imgs/img.webp", "imgs/user.jpg","imgs/logoabout.webp", "imgs/hosoren.webp"]
-let cardsimgs = ["imgs/img.webp", "imgs/user.jpg","imgs/logoabout.webp", "imgs/hosoren.webp"]
-let hiddenimgs = ["imgs/img.webp", "imgs/user.jpg","imgs/logoabout.webp"]
+
+let links = ["about.html" , "blog.html", "contact.html", "index.html", "singleitem.html", "team.html"]
+let sliderimgs = ["assets/imgs/img.webp", "assets/imgs/user.jpg","assets/imgs/logoabout.webp", "assets/imgs/hosoren.webp"]
+let cardsimgs = ["assets/imgs/img.webp", "assets/imgs/user.jpg","assets/imgs/logoabout.webp", "assets/imgs/hosoren.webp"]
+let hiddenimgs = ["assets/imgs/img.webp", "assets/imgs/user.jpg","assets/imgs/logoabout.webp"]
 let i = 0;
 let body = document.querySelector("body");
 let previous = document.getElementById("previous")
@@ -244,45 +165,69 @@ let next = document.getElementById("next")
 let img = document.getElementById("imgcarrusel")
 let button = document.getElementById("load")
 let cards = document.getElementById("imgscards")
+let relatedfooter = document.getElementById("cards");
 
+
+for(let i = 0; i<12; i++)
+{
+    let newarticle = document.createElement("article")
+    let newimg = document.createElement("img")
+    let newp = document.createElement("p");
+    let newa = document.createElement("a")
+
+    newp.textContent= "HOLA"
+    newp.classList.add("textcards");
+    newimg.src = "assets/imgs/imgitem.jpg"
+     newa.setAttribute("href", "singleproyect.html");
+    newa.appendChild(newimg);
+    newa.appendChild(newp);
+    newarticle.appendChild(newa);
+    cards.appendChild(newarticle);
+   
+    cards.appendChild(newarticle)
+}
+
+for(let i = 0; i<6; i++)
+{
+    let newarticle = document.createElement("article")
+    let newimg = document.createElement("img")
+    let newp = document.createElement("p");
+    newp.textContent= "HOLA"
+    newp.classList.add("textcards");
+    newimg.src = "assets/imgs/imgitem.jpg"
+    newarticle.appendChild(newimg)
+    newarticle.appendChild(newp)
+    relatedfooter.appendChild(newarticle)
+} 
 
 button.addEventListener("click", function()
 {
-for(let i = 0; i<1;i++)
+for(let i = 0; i<3;i++)
 {
     let newarticle = document.createElement("article")
     let newimg = document.createElement("img");
     let newp = document.createElement("p");
     newp.textContent= "HOLA"
     newp.classList.add("textcards");
-    newimg.src = "imgs/img.webp"
+    newimg.src = "assets/imgs/img.webp"
     newarticle.appendChild(newimg)
     newarticle.appendChild(newp)
     cards.appendChild(newarticle)
 }
-
-
-})
-next.addEventListener("click", function(){
-
-    i++;
-    if(i >=sliderimgs.length)
-    {
-        i = 0
-    }
-    img.src = sliderimgs[i]
-
 })
 
-previous.addEventListener("click", function(){
+next.addEventListener("click", function() {
 
-    i--;
-    if(i <=sliderimgs.length)
-    {
-        i = 0
-    }
-     img.src = sliderimgs[i]
+    i = (i + 1) % sliderimgs.length;
+    img.src = sliderimgs[i];
 
-})
+});
+
+previous.addEventListener("click", function() {
+
+    i = (i - 1 + sliderimgs.length) % sliderimgs.length;
+    img.src = sliderimgs[i];
+
+});
 </script>
 </html>

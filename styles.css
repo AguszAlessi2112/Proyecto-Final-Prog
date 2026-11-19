@@ -1,8 +1,14 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 .navbar
@@ -17,13 +23,17 @@ text-decoration: none;
     justify-content: flex-end;
     align-items: center;
     gap: 100px;
-    list-style: none;      
+    list-style: none; 
+      
 }
 li
 {
     border-radius: 3px;
     padding: 5px;
-    text-decoration: aliceblue;
+}
+li a 
+{
+    color: white;
 }
  li:hover
 {
@@ -85,10 +95,16 @@ li
 .cards article {
     display: flex;
     justify-content: center;
-}
-.cards article {
+    align-items: center;
     position: relative;
     overflow: hidden;
+}
+
+.cards article a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cards img {
@@ -99,8 +115,6 @@ li
 
 .textcards {
     position: absolute;
-   top: 50%;
-   left: 45%;
     color: white;
     opacity: 0;
     z-index: 1;
@@ -175,6 +189,7 @@ color: #e9e9e9;
 .titleproject
 {
     padding: 2%;
+    color: white;
 }
 footer {
     background-color: black;
@@ -182,19 +197,235 @@ footer {
 }
 
 
+.contfooter {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+    gap: 3em;
+    padding: 4em 0;
+}
+
 .cardsfooter {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap: 1.5rem;
-    width: 30%;
-    margin: 0 auto;
-}
-.cards article {
-    display: flex;
-    justify-content: flex-end;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
 }
 
 .cardsfooter img {
     width: 100%;
-    height: 100%;
+    display: block;
+}
+
+.pagesfooter ul {
+    list-style: none;
+}
+
+.pagesfooter li {
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.iconsfooter {
+    display: flex;
+    gap: 0.8em;
+    margin-bottom: 1em;
+}
+
+.iconsfooter a {
+    color: gray;
+}
+
+.contactsfooter .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contactsfooter .contacts a {
+    color: gray;
+}
+
+.contfooter h2 {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+}
+
+
+.ruta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 2% 3%;
+    background-color: #151515;
+}
+
+.ruta a {
+    color: white;
+}
+
+.ruta p {
+    color: gray;
+}
+
+.ruta a:hover {
+    color: gray;
+}
+
+.singleproject {
+    width: 65%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.singleproject h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.singleproject img {
+    width: 100%;
+    display: block;
+}
+
+.descriptionproject {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 3% 0;
+    color: #ccc;
+    line-height: 160%;
+}
+
+.imgssingle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.relatedprojects {
+    width: 65%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.relatedprojects h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cardsrelated {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.cardsrelated img {
+    width: 100%;
+    display: block;
+    height: 200px;
+}
+
+.cardsrelated h3 {
+    color: white;
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.cardsrelated p {
+    color: gray;
+    font-size: 13px;
+}
+
+.cardsrelated a {
+    color: white;
+    cursor: pointer;
+}
+
+.cardsrelated article:hover img {
+    opacity: 0.5;
+}
+
+
+.commentproject {
+    width: 65%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.commentproject h2 {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.datoscomment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.datoscomment div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* Campos del formulario */
+
+.commentproject input,
+.commentproject textarea {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 16px 0;
+}
+
+.commentproject label {
+    color: gray;
+}
+
+
+.messagecomment {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.messagecomment textarea {
+    height: 128px;
+}
+
+.buttoncomment {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+}
+
+.buttoncomment button {
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    padding: 16px 48px;
+    cursor: pointer;
+}
+
+.buttoncomment button:hover {
+    background-color: white;
+    color: black;
+}
+
+.confirmacion {
+    width: 100%;
+    border: 2px solid #46b450;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 16px;
 }

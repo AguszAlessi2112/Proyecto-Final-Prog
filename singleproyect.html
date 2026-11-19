@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="ulnavbar">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="contact.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="ruta">
+
+            <a href="index.html">HOME</a>
+            <p>/</p>
+            <p>SINGLE PROJECT</p>
+
+        </section>
+
+        <section class="singleproject">
+
+            <h1>PROJECT SINGLE PAGE</h1>
+
+            <img src="assets/imgs/imgitem.jpg" alt="">
+
+            <div class="descriptionproject">
+
+                <p>
+                    Lorem ipsum dolor sit amet, pro oratio
+                    utamur honestatis te, mollis prompta
+                    democritum mei ut.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+
+            </div>
+
+            <div class="imgssingle">
+
+                <img src="assets/imgs/img.webp" alt="">
+                <img src="assets/imgs/hosoren.webp" alt="">
+                <img src="assets/imgs/imgitem.jpg" alt="">
+
+            </div>
+
+        </section>
+
+
+        <section class="relatedprojects">
+
+            <h2>RELATED PROJECTS</h2>
+
+            <div class="cardsrelated" id="cardsrelated">
+
+            </div>
+
+        </section>
+
+
+        <section class="commentproject">
+
+            <h2>LEAVE A COMMENT</h2>
+
+            <form id="formcomment">
+
+                <div class="datoscomment">
+
+                    <div>
+                        <label for="nombre">Name:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+
+                    <div>
+                        <label for="email">Email:*</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                </div>
+
+                <div class="messagecomment">
+
+                    <label for="mensaje">Message*</label>
+
+                    <textarea id="mensaje" name="mensaje"></textarea>
+
+                </div>
+
+                <div class="buttoncomment">
+
+                    <button type="submit">SEND</button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contfooter">
+
+            <div class="logofooter">
+
+                <img src="assets/imgs/logoabout.webp" alt="Logo">
+
+                <p>
+                    The concept of Brume has roots in the Vedic
+                    Literature. It comes as a developed form of
+                    sensual photography without mechanistic
+                    details and boasts a strong emotional background.
+                </p>
+
+            </div>
+
+
+            <div class="pagesfooter">
+
+                <h2>PAGES</h2>
+
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="contactsfooter">
+
+                <h2>CONTACTS</h2>
+
+                <div class="iconsfooter">
+
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Behance">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+
+                </div>
+
+                <div class="contacts">
+
+                    <a href="mailto:agusz.alessi@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        agusz.alessi@gmail.com
+                    </a>
+
+                    <a href="tel:12345677">
+                        <i class="fa-solid fa-phone"></i>
+                        12345677
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="relatedfooter">
+
+                <h2>RELATED PROJECTS</h2>
+
+                <div class="cardsfooter" id="cards">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+let links = ["about.html" , "blog.html", "contact.html", "index.html", "singleitem.html", "team.html"]
+
+let cardsimgs = ["assets/imgs/img.webp", "assets/imgs/user.jpg","assets/imgs/logoabout.webp", "assets/imgs/hosoren.webp"]
+let cardsrelated = document.getElementById("cardsrelated");
+let relatedfooter = document.getElementById("cards");
+let relatedtitles = ["NEW TRENDS IN SOCIAL MEDIA", "MY WEDDING PHOTOGRAPHY ESSENTIALS", "WHAT'S YOUR PHOTOGRAPHY ORIGIN STORY?", "BRENIZER EFFECT PORTRAITS"];
+
+let relateddates = ["9 December 2022", "18 December 2022", "29 January 2023", "15 March 2023"];
+
+let relatedimgs = ["assets/imgs/imgitem.jpg", "assets/imgs/img.webp", "assets/imgs/hosoren.webp", "assets/imgs/imgitem.jpg"];
+
+let formcomment = document.getElementById("formcomment");
+let nombre = document.getElementById("nombre");
+let email = document.getElementById("email");
+let mensaje = document.getElementById("mensaje");
+for (let i = 0; i< 4; i++)
+{
+    let newarticle = document.createElement("article")
+    let newimg = document.createElement("img")
+    newimg.src = cardsimgs[i];
+    let newh3 = document.createElement("h3");
+    newh3.textContent= relatedtitles[i];
+    let newp = document.createElement("p")
+    newp.textContent = relateddates[i];
+    let newa = document.createElement("a");
+    newa.setAttribute("href", "singleitem.html");
+    newa.appendChild(newimg);
+    newa.appendChild(newh3);
+    newa.appendChild(newp);
+
+    newarticle.appendChild(newa);
+    cardsrelated.appendChild(newarticle);
+}
+
+
+for(let i = 0; i<6; i++)
+{
+    let newarticle = document.createElement("article")
+    let newimg = document.createElement("img")
+    let newp = document.createElement("p");
+    newp.textContent= "Proyecto "
+    newp.classList.add("textcards");
+    newimg.src = "assets/imgs/imgitem.jpg"
+    newarticle.appendChild(newimg)
+    newarticle.appendChild(newp)
+    relatedfooter.appendChild(newarticle)
+} 
+
+formcomment.addEventListener("submit", function(e)
+{
+    let confirmacion =document.createElement("p")
+    e.preventDefault();
+
+    if(nombre.value === "" || email.value === "" || mensaje.value === "")
+    {
+        confirmacion.textContent = "LLENA TODO LOS CAMPOS";
+        formcomment.appendChild(confirmacion)
+
+    }
+    else
+    {
+
+    confirmacion.textContent = "Thank you for your message. It has been sent.";
+    confirmacion.classList.add("confirmacion")
+    formcomment.appendChild(confirmacion);
+    }
+
+
+    nombre.value = "";
+    email.value = "";
+    mensaje.value = "";
+});
+
+    </script>
+
+</body>
+
+</html>
